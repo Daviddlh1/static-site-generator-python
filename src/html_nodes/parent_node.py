@@ -1,4 +1,7 @@
-from src.html_nodes import HTMLNode
+try:
+    from .htmlnode import HTMLNode
+except ImportError:
+    from html_nodes.htmlnode import HTMLNode
 
 class ParentNode(HTMLNode):
     def __init__(

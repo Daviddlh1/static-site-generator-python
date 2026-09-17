@@ -1,5 +1,5 @@
 import unittest
-from src.html_nodes.htmlnode import HTMLNode
+from src.html_nodes import HTMLNode
 
 class TestHTMLNode(unittest.TestCase):
     def test_print(self):

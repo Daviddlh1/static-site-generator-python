@@ -1,4 +1,7 @@
-from src.html_nodes.htmlnode import HTMLNode
+try:
+    from .htmlnode import HTMLNode
+except ImportError:
+    from html_nodes.htmlnode import HTMLNode
 
 class LeafNode(HTMLNode):
     def __init__(self, tag: str| None, value: str, props: dict | None = None) -> None:

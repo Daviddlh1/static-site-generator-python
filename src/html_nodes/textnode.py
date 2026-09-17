@@ -1,5 +1,9 @@
 from enum import Enum
-from src.html_nodes import LeafNode
+
+try:
+    from .leafnode import LeafNode
+except ImportError:
+    from html_nodes import LeafNode
 
 class TextType(Enum):
     BOLD="Bold"
